@@ -16,7 +16,7 @@ const StockForm = ({ onSave }) => {
     const buyPriceNumber = parseFloat(buyPrice);
 
     axios
-      .post("http://localhost:2024/api/stocks", { 
+      .post("https://backend-stockportfolio-production.up.railway.app/api/stocks", { 
         stockName: name, 
         ticker, 
         quantity: quantityNumber, 

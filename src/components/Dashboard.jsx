@@ -34,7 +34,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:2024/api/stocks")
+      .get("https://backend-stockportfolio-production.up.railway.app/api/stocks")
       .then((response) => {
         setPortfolio(response.data);
         calculateTotalValue(response.data);
@@ -44,7 +44,7 @@ const Dashboard = () => {
     const fetchStockPrices = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:2024/api/stocks/real-time-prices"
+          "https://backend-stockportfolio-production.up.railway.app/api/stocks/real-time-prices"
         );
         setStockPrices(response.data);
         setLoading(false);

@@ -18,7 +18,7 @@ const StockEditForm = ({ stock, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put(`http://localhost:2024/api/stocks/${formData.id}`, formData)
+    axios.put(`https://backend-stockportfolio-production.up.railway.app/api/stocks/${formData.id}`, formData)
       .then((response) => {
         onClose();
         window.location.reload(); // Refresh page or handle state update

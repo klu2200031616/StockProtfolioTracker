@@ -9,13 +9,13 @@ const StockList = ({ onDelete }) => {
 
   useEffect(() => {
     // Fetch stocks from backend
-    axios.get("http://localhost:2024/api/stocks")
+    axios.get("https://backend-stockportfolio-production.up.railway.app/api/stocks")
       .then((response) => setStocks(response.data))
       .catch((error) => console.error("Error fetching stocks:", error));
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:2024/api/stocks/${id}`)
+    axios.delete(`https://backend-stockportfolio-production.up.railway.app/api/stocks/${id}`)
       .then(() => {
         setStocks(stocks.filter(stock => stock.id !== id));
         onDelete(id);
