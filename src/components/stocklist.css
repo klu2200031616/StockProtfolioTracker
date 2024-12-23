@@ -1,0 +1,114 @@
+/* Center the table and give some padding */
+.table-container {
+    display: flex;
+    flex-direction: column; /* Stack the table and form vertically */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7fb;
+    padding: 20px;
+  }
+  
+  .stock-table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Header row styling */
+  .stock-table thead {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Table row hover effect */
+  .stock-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* No stocks available text */
+  .stock-table tbody tr td[colspan="6"] {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  button i {
+    margin-right: 8px; /* Space between the icon and text */
+  }
+  
+  /* Edit button */
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Delete button */
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Styling for the edit form container */
+  .edit-form-container {
+    margin-top: 20px;
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+/* Save button */
+.save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Cancel button */
+  .cancel-btn {
+    background-color: #6c757d; /* Gray color for the cancel button */
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+  }
+  
+  /* Optional: Remove margin-right for the last button */
+  .cancel-btn:last-child {
+    margin-right: 0;
+  }  
